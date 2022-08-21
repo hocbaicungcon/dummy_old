@@ -1,8 +1,8 @@
 ---
+layout: search
+title: Search
 permalink: /search/
-layout: page
-title: "Search"
-sitemap: false
+subtitle: "What are you looking for?"
+feature-img: "assets/img/pexels/search-map.jpeg"
+icon: "fa-search"
 ---
-
-{% include _google_search.html %}
