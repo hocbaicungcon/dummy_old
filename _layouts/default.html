@@ -1,16 +1,17 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<!--
-    Type on Strap jekyll theme v2.4.3
-    Theme free for personal and commercial use under the MIT license
-    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
--->
-<html lang="en">
-  {% include default/head.liquid %}
-  <body>
-    {% include default/navbar.liquid %}
-    <div class="content">
-      {{ content }}
-    </div>
-    {% include default/footer.liquid %}
-  </body>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="has-push-menu">
+        {% include svg-icons.html %}
+        {% include header.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% include footer.html %}
+    </body>
 </html>
+

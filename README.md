@@ -1,631 +1,290 @@
-# Type on Strap 🎨
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5f205b3a-73c2-472c-b052-82b95bdf36b7/deploy-status)](https://app.netlify.com/sites/sleepy-bhabha-00eedf/deploys)
 
-[![Build](https://github.com/sylhare/Type-on-Strap/actions/workflows/jekyll-build.yml/badge.svg)](https://github.com/sylhare/Type-on-Strap/actions/workflows/jekyll-build.yml)
-[![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/sylhare/type-on-strap)](https://hub.docker.com/r/sylhare/type-on-strap)
+### Hey guys, how are you? 🍽 🇧🇷
 
-[![Default Type on Strap blog](https://github.com/Sylhare/Type-on-Strap/blob/master/assets/img/screenshot.png?raw=true)](https://sylhare.github.io/Type-on-Strap/)
+As you know, this is a 100% free template, I earn nothing to maintain it. So, I have this idea and hope you can join me for a good cause.
 
-A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) packed with extra features and easily customizable:
+Every donation that I receive from this project from now on (04/11/21), I'll donate to NGOs that work against hunger in Brazil.
 
-* Responsive design on all devices (🖥, 💻, 📱, ...)
-* Portfolio 🗂, Gallery 🖼 pages for your projects
-* Multi comments 💬 options  
-* Tags compatibility 🏷
-* Handle _Bootstrap_'ed pages: [Get Bootstrap](http://getbootstrap.com/)
-* 🔎 Search feature: [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Math Rendering : [KateX](https://github.com/Khan/KaTeX)
-* Diagram Rendering: [Mermaid-js](https://github.com/mermaid-js/mermaid)
-* 🖋 Nice fonts: [Font Awesome](https://fontawesome.com/), [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), [Pacifico](https://fonts.google.com/specimen/Pacifico?selection.family=Pacifico) 
-* Seo Tags: [Jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
-* 🛠 Syntax Highlighting: Easily customisable [Base16](https://github.com/chriskempson/base16)
-* 💡 Light and dark theme supported
-* Find free of rights images on [pexels](https://www.pexels.com/)
+If you feel the template is worth it and you could help people in need, here is the link:
 
-> [Demo Site](https://sylhare.github.io/Type-on-Strap/) 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAKL66RSDGH48&source=url)
 
-## Usage
+Thank you!
 
-### As a ruby gem 💎
+# Jekflix Template
 
-Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
+![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/sylhare/Type-On-Strap)
+See the [demo here](https://jekflix.rossener.com/).
 
-### As a github page 📋
+## What is it?
 
-1. Fork and clone the [Type on Strap repo](https://github.com/sylhare/Type-On-Strap): `git clone https://github.com/Sylhare/Type-on-Strap.git`
-2. Install [Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`, check [#1](https://github.com/Sylhare/Type-on-Strap/issues/1) if you have a problem.
-3. Install the theme's dependencies: `bundle install`
-4. Customize the theme
-	- GitHub Page: [update `_config.yml`](#site-configuration)
-5. Run the Jekyll server: `bundle exec jekyll serve`
+A theme for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance.
 
-## Structure
+![Jekflix Screenshot Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566390829/jekflix-screenshot-2_zfiog2.jpg)
 
-Here are the main files of the template
+## Features
 
-```shell
-Type-on-Strap
-├── _includes	               # Theme includes
-├── _layouts                   # Theme layouts (see below for details)
-├── _portfolio	               # Collection of articles for the portfolio page
-├── _posts                     # Blog posts
-├── _sass                      # Sass partials (compiled into css at runtime)
-├── assets
-|  ├── js	               # JS compiled for distribution + raw sources
-|  ├── css                     # CSS compiled for distribution
-|  ├── fonts		       # Font-Awesome, and other fonts
-|  └── img		       # Images used for the template
-├── pages
-|   ├── 404.md		       # To be displayed when url is wrong
-|   ├── about.md               # About example page
-|   ├── gallery.md             # Gallery page for your photos
-|   ├── portfolio.md	       # Portfolio page for your projects
-|   ├── search.md	       # Search page
-|   └── tags.md                # The tag page
-├── _config.yml                # sample configuration
-├── _data.yml
-|  ├── authors.yml             # Update the post authors configurations 
-|  ├── language.yml            # Localization configuration
-|  ├── biblio.yml              # To create a reference bibliography
-|  ├── social.yml              # Social configurations to share posts (RSS, shares, ...)
-|  └── icons.yml               # Footer icons (Twitter, Github, Stackoverflow, ...)
-└── index.html                 # sample home page (blog page paginated)
+- [Live Search](https://github.com/thiagorossener/jekflix-template/wiki/Features#live-search)
+- [Estimated Reading Time](https://github.com/thiagorossener/jekflix-template/wiki/Features#estimated-reading-time)
+- [Reading Progress Bar](https://github.com/thiagorossener/jekflix-template/wiki/Features#reading-progress-bar) *(optional)*
+- ["New Post" tag](https://github.com/thiagorossener/jekflix-template/wiki/Features#new-post-tag)
+- [Load images on demand](https://github.com/thiagorossener/jekflix-template/wiki/Features#load-images-on-demand)
+- [Push Menu](https://github.com/thiagorossener/jekflix-template/wiki/Features#push-menu)
+- [SVG icons](https://github.com/thiagorossener/jekflix-template/wiki/Features#svg-icons)
+- [Shell script to create posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#shell-script-to-create-posts)
+- [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/Features#tags-page)
+- [About page](https://github.com/thiagorossener/jekflix-template/wiki/Features#about-page)
+- [Contact page](https://github.com/thiagorossener/jekflix-template/wiki/Features#contact-page)
+- [404 error page](https://github.com/thiagorossener/jekflix-template/wiki/Features#404-error-page)
+- [Feed RSS](https://github.com/thiagorossener/jekflix-template/wiki/Features#feed-rss)
+- [Disqus](https://github.com/thiagorossener/jekflix-template/wiki/Features#disqus) *(optional)*
+- [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/Features#featured-post) *(optional)*
+- [Home page pagination](https://github.com/thiagorossener/jekflix-template/wiki/Features#home-page-pagination) *(optional)*
+- [Posts sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar) *(optional)*
+- [Paginated posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#paginated-posts) *(optional)*
+- ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) *(optional)*
+- [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
+- [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
+- [Translations](https://github.com/thiagorossener/jekflix-template/wiki/setup#translations) **new!**
+- [Math Expressions](https://github.com/thiagorossener/jekflix-template/wiki/Features#math-expressions) *(optional)* **new!**
+
+## SEO
+
+- Google Analytics
+- Meta tags
+- JSON-LD
+- Sitemap.xml
+- Social Media ready
+
+## Quick Install
+
+In the case you're installing to existing Jekyll project, add this line to your project's `Gemfile`:
+
 ```
-	
-## Configure Type on Strap 🛠
+gem "jekflix"
+```
 
-Open `_config.yml` in a text editor to change most of the blog's settings.
+Add this line to your project's `_config.yml`:
 
-If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. 
+```
+theme: jekflix
+```
+
+And then run:
+
+```
+$ bundle
+```
+
+Or install it yourself as:
+
+```
+$ gem install jekflix
+```
+
+### Theme Colors
+
+Create the file `/assets/css/styles.scss` and add:
+
+```
+---
+---
+
+$themeColor: #ff0a16;
+$primaryDark: #141414;
+$accentDark: #ffffff;
+$lightGray: #f2f2f2;
+$texts: #333333;
+
+@import "jekflix";
+```
+
+Modify the variables above to change your theme colors.
 
 ### Site configuration
 
-#### Base url
+Below are some properties you can change in your project `_config.yml`, check the [documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) for more details.
 
-Configure Jekyll as your own blog or with a "baseurl" in `_config.yml`:
-
-Jekyll website *without* a "baseurl" (such as a **GitHub Pages website** with your username as the repository name):
-
-```yml
-baseurl: ""
-url: "https://username.github.io"
 ```
-
-Jekyll website *with* "baseurl" (like the Type on Strap [demo](https://sylhare.github.io/Type-on-Strap/) page):
-
-```yml
-baseurl: "/sub-directory"
-url: "https://username.github.io"
-```
-
-#### Jekyll blog configuration 
-
-And here is the basic information you will need in your `_config.yml` for it to work properly:
-
-```yaml
-# BLOG CONFIGURATION
-post_navigation: true
-paginate: 10
-paginate_path: "blog/page:num"
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-```
-
-To configure the blog part and default plugins. Those plugins are validated by GitHub page.
-
-#### Meta and Branding
-
-Meta variables hold basic information about your Jekyll site which will be used throughout the site 
-and as meta properties that are used for search engines, browsers, and the site's RSS feed.
-
-Change these variables in `_config.yml`:
-
-```yml
-title: My Jekyll Blog                 # Name of website
-avatar: assets/img/avatar.png         # Path of avatar image, to be displayed in the theme's header
-description: My blog posts            # Short description, primarily used by search engines
-favicon: assets/favicon.ico           # Icon displayed in the tab
-color_theme: auto                     # color theme auto, dark or light
-```
-
-You can also customize the seo tags default option following the jekyll-seo-tag plugin [documentation](http://jekyll.github.io/jekyll-seo-tag/advanced-usage/).
-The color theme can be set to dark or light (customize it in _variables.scss_). 
-Using _auto_ you'll have a tiny icon in the navbar allowing the use to manually switch from dark to light theme.
-
-### Theme customization 🎨
-
-#### Footer and Header's text
-
-Customize your site header/footer with these variables in `_config.yml`:
-
-```yml
-header_text: Welcome to my Jekyll blog
-footer_text: Copyright 2017
-```
-
-If you don't want anything, replace the value by `" "`.
-
-#### Header's image
-
-The header's image (tested with 2480x1280) can be set as one image with `header_feature_image`
-but can also be responsive:
-
-```yml
-header_feature_image: assets/img/header/my-header-image.png
-header_feature_image_responsive: true
-```
-
-By setting `header_feature_image_responsive` to true, it will look for images 
-with suffix `-small` (620x320) and `-medium` (1240x640) to display on smaller screen.
-
-#### Localisation string
-
-Localization string is a way to quickly change the template language for text like *Next Post* or *Follow on*, ...
-You can find all the properties in `_data/language.yml`.
-
-By default, it is in english, but you can easily add your own language.
-
-### Google Analytics
-
-To enable Google Analytics, add your [tracking ID](https://support.google.com/analytics/answer/1032385) 
-to `_config.yml` like so:
-
-```yml
-google_analytics: UA-NNNNNNNN-N
-```
-
-### Comments 💬
-
-#### Disqus
-
-If you have a [Disqus](https://disqus.com/) account, you can show a comments section below each post.
-
-To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) 
-to your project's `_config.yml` file:
-
-```yml
-comments:
-  disqus_shortname: my_disqus_shortname
-```
-
-#### Cusdis
-
-[Cusdis](https://cusdis.com/) is an open source alternative to Disqus.
-You can read more about it in the [documentation](https://cusdis.com/doc#/)
-
-To enable it, set your cusdis name in `_config.yml`:
-
-```yaml
-comments:
-  cusdis_app_id: my_data-app-id                                     
-```
-
-#### Utterances
-
-[Utterances](https://utteranc.es) is another open source alternative linked to one's GitHub account.
-It stores the comments as GitHub issues on a repository for each page.
-
-Install the utterance [app](https://github.com/apps/utterances) to your repo.
-After installing, add your info in the `_config.yml`:
-
-```yaml
-comments:
-  utterances:              # Enable by filling below information. For more info, go to https://utteranc.es
-    repo:                  # your public comments repository (e.g. owner/repo)
-    issue-term:            # Issue term (e.g. "comment" consider issues with this word in the title as comments)
-    theme:                 # OPTIONAL: Take the `color_theme` by default, or set a custom one like github-dark-orange
-    label:                 # OPTIONAL: Adds an issue label in the issue
-```
-
-### Math typesetting with KateX
-
-When KateX is set in `_config.yml`:
-
-```yml
-katex: true # to enable it
-```
-
-You can then wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable 
-in `_config.yml` to `true` for math typesetting.
-
-For inline math typesetting, type your math expression on the *same line* as your content. For example:
-
-```latex
-Type math within a sentence $$2x^2 + x + c$$ to display inline
-```
-
-For display math typesetting, type your math expression on a *new line*. For example:
-
-```latex
-$$
-  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
-$$
-```
-
-You can find a cheat sheet of the compatible LaTex symbols [online](https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols).
-
-### Diagrams with Mermaid
-
-Enable the [mermaid-js](https://github.com/mermaid-js/mermaid) diagram rendering by setting mermaid to true in the `_config.yml`.
-This will load and init the [mermaid.min.js](https://mermaid-js.github.io/mermaid/getting-started/n00b-gettingStarted.html#4-calling-mermaid-from-a-relative-link).
-
-```yml
-mermaid: default # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
-```
-
-Find all the help you need on the official [mermaid documentation](https://mermaid-js.github.io/mermaid/).
-You can create with ease diagrams. Add your mermaid script inside two mermaid divs (default Kramdown does not yet support mermaid).
-With the `class="mermaid"` inside the `<div>`:
-
-```html
-<div class="mermaid">
-sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-</div>
-```
-
-### Social icons
-
-In `_data/social.yml` you can customize the social icons that will be displayed in the post to share your post.
-You can also enable RSS.
-The site icons come from [Font Awesome](https://fontawesome.com/).
-
-In `_data/icons.yml` you can set the footer icon that will appear at the bottom of the page.
-They will redirect the user on your profile on the other platform like Twitter, GitHub and so many more!
-
-### Cookie consent
-
-You can add a cookie consent with a disclaimer if you use Google Analytics while respecting the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
-Set to true, there will be a banner at the bottom of the page with the disclaimer, and an _approve_ button.
-Once the user clicks on "Approve" the cookies will be created for Google Analytics.
-
-#### Share in article
-
-The share icons are the one at the bottom of the blog page if enabled, 
-to share the article on those platform.
-
-#### Footer
-
-Display icons in the footer. 
-All icon variables should be your username enclosed in quotes (e.g. "username") in `_data/icons.yml`.
-
-You can update the RSS settings in `_data/social` to change the default feed path (generated by [jekyll-feel](https://github.com/jekyll/jekyll-feed)).
-To enable the share icons at the bottom of each article set to true the one you'd like under `share` in the `_data/social.yml` file.
-
-### Personalize your Blog Posts 📝
-
-When writing a post, be sure in jekyll to:
- - Put it in the `_posts` folder
- - Name it with the date first like `2019-08-21-This-is-my-blog-post.md`
-
-Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). 
-
-#### Layout: Post
-
-These are the basic features you can use with the `post` layout.
-
-```yml
-
----
-layout: post
-title: Hello World                                # Title of the page
-hide_title: true                                  # Hide the title when displaying the post, but shown in lists of posts
-feature-img: "assets/img/sample.png"              # Add a feature-image to the post
-thumbnail: "assets/img/thumbnails/sample-th.png"  # Add a thumbnail image on blog view
-color: rgb(80,140,22)                             # Add the specified color as feature image, and change link colors in post
-bootstrap: true                                   # Add bootstrap to the page
-tags: [sample, markdown, html]
----
-```
-
-With `thumbnail`, you can add a smaller image than the `feature-img`. 
-If you don't have a thumbnail you can still use the same image as the feature one. Or use the gulp task to create it.
-
-The background used when `color` is set comes from `lineart.png` from [xukimseven](https://github.com/xukimseven) 
-you can edit it in the config file (`_config.yml > color_image`). If you want another one, put it in `/assets/img` as well. 
-
-The **bootstrap** is not mandatory and is only useful if you want to add bootstrapped content in your page. 
-It will respect the page and theme layout, mind the padding on the sides.
-
-#### Post excerpt
-
-The [excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) are the first lines of an article that is display on the blog page. 
-The length of the excerpt has a default of around `250` characters or can be manually set in the post using:
-
-in `conflig.yml`:
-
-```yml
-excerpt: true
-```
-
-Then in your post, add the `excerpt separator`:
-
-```yml
-
----
-layout: post
-title: Sample Page
-excerpt_separator: <!--more-->
----
-
-some text in the excerpt
-<!--more-->
-... rest of the text not shown in the excerpt ...
-```
-
-The html is stripped out of the excerpt, so it only displays text.
-
-#### Image aligner
-
-To easily add align images side by side in your article using the `aligner.html` include:
-
-```ruby
-{% include aligner.html images="path/to/img1.png,path/to/img2.png,path/to/img3.png" column=3 %}
-```
-
-Use it in any markdown file. There are two fields in the _include_ you need to look into:
-  - _images_: Takes a string separated with `,` of all the images' path. 
-    - It by default look into `assets/img/` so give the path from there.
-  - _column_: (OPTIONAL) Set the number of column you want your imaged displayed in.
-    - default is 2 columns
-    - `column=3` set 3 columns
-    - `column="auto"` makes as many columns as images
-
-#### Code highlight
-
-Like all CSS variables in the theme, you can edit the color of the code highlight in `_sass > base > _variables.scss`.
-The code highlighting works with [base16](https://github.com/chriskempson/base16-html-previews/tree/master/css) you can find existing example 
-of your favourite highlight color scheme on this format.
-
-## Feature pages and layouts 
-
-All feature pages besides the "home" one are stored in the `page` folder, 
-they will appear in the navigation bar unless you set `Hide: true` in the front matter. 
-
-Here are the documentation for the other feature pages that can be added through `_config.yml`. 
-
-Non-standard features are documented below.
-
-### Layout: Default
-
-This layout includes the head, navigation bar and footer around your content. 
-Unless you are making a custom layout you won't need it.
-
-### Layout: Home 🏡
-
-This page is used as the home page of the template (in the `index.html`). It displays the list of articles in `_posts`.
-You can use this layout in another page (adding a title to it will make it appear in the navigation bar).
-
-The recommended width and height for the home picture is width:`2484px;` and height:`1280px` 
-which are the dimensions of the actual picture for it to be rolling down as you scroll the page.
-
-If your posts are not displaying ensure that you have added the line `paginate: 5` to `_config.yml`.
-
-### Layout: Page 📄
-
-The page layout have a bit more features explained here.
-
-```yml
-
----
-layout: page
-title: "About" 
-subtitle: "This is a subtitle"   
-feature-img: "assets/img/sample.png" 
-permalink: /about/                   # Set a permalink your your page
-hide: true                           # Prevent the page title to appear in the navbar
-icon: "fa-search"                    # Will Display only the fontawesome icon (here: fa-search) and not the title
-tags: [sample, markdown, html]
----
-```
-
-The hide only hides your page from the navigation bar, it is however still generated and can be access through its link. 
-
-### Feature: Portfolio 🗂
-
-Portfolio is a feature page that will take all the markdown/html files in the `_portfolio` folder to create a 3-columns image portfolio matrix.
-
-To use the portfolio, simply create a `portfolio.md` with this information inside:
-
-```yml
-
---- 
-layout: page
-title : Portfolio 
----
-
-{% include default/portfolio.html %}
-```
-
-#### Portfolio posts
-
-You can format the portfolio posts in the `_portfolio` folder using the `post layout`. Here are little explaination on some of the possible feature you can use and what they will do.
-
-If you decide to use a date, please be sure to use one that can be parsed such as `yyyy-mm-dd`. You can see more format example on the demo posts that are available for the theme:
-
-```yml
-
----
-layout: post
-title: Circus				       # Title of the portfolio post
-feature-img: "assets/img/portfolio/cake.png"   # Will display the image in the post
-img: "assets/img/portfolio/cake.png"           # Will display the image in the portfolio page
-date: 2019-07-25		 	       # Not mandatory, however needs to be in date format to display the date
----
-```
-
-#### Portfolio in gem
-
-Make sure your `_config.yml` contains the following if you are using the theme as a gem:
-
-```yml
-# PORTFOLIO
+# Site Settings
+name: Jekflix
+title: Jekflix | A blog theme for Jekyll
+description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+email: youremail@xyz.com
+disqus_username: disqus_username
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
+
+# Social Media Settings
+# Remove the item if you don't need it
+github_username: github_username
+facebook_username: facebook_username
+twitter_username: twitter_username
+instagram_username: instagram_username
+linkedin_username: linkedin_username
+medium_username: medium_username
+
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
+language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 collections:
-  portfolio:
+  authors:
     output: true
-    permalink: /:collection/:name
-```    
+paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
 
-This creates the collection for Jekyll, so it can find and display your portfolio posts.
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
 
-### Feature: Gallery 🖼
+# SASS
+sass:
+  style: compressed
 
-You can create a gallery using [Masonry JS](https://masonry.desandro.com/) which will placing the pictures in optimal position 
-based on available vertical space. 
-You need to specify the `gallery_path` which will be used to find the pictures to render. 
-It will take all the pictures under that directory. Then use the `include` to add it in your page. 
-
-```yml
-
----
-layout: page
-title: Gallery
-gallery: "assets/img/pexels"
----
-
-{% include default/gallery.html gallery_path=page.gallery %}
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
 ```
 
-### Feature: Search 🔍
+## Setup
 
-The search feature is based on [Simple-Jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search) 
-there is a `search.liquid` file that will create a list of all the site posts, pages and portfolios. 
+In the case you're cloning this repo, follow those instructions:
 
-Then there's a `search.js` displaying the formatted results in the "search page".
+- [Environment](https://github.com/thiagorossener/jekflix-template/wiki/setup#environment)
+- [Installing template](https://github.com/thiagorossener/jekflix-template/wiki/setup#installing-template)
+- [Running local](https://github.com/thiagorossener/jekflix-template/wiki/setup#running-local)
 
-The search page can be hidden with the `hide` option. You can remove the icon by removing `icon`:
+### Customization
 
-```yml
+See the [settings documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) to customize layout, titles, social media and more.
 
----
-layout: search
-title: Search
-icon: "search"
----
-```
+### Theme
 
-### Feature: Tags 🏷
+You can easily change the theme colors by changing the file `src/yml/theme.yml`, then running `gulp build` in your terminal.
 
-Tags should be placed between `[]` in your post metadata. Separate each tag with a comma. 
-Tags are recommended for posts and portfolio items.
+#### GitHub pages
 
-For example:
+It's a known issue that you can't run Gulp when deploying the website into GitHub pages. So, you must change the theme colors and run `gulp build` locally, then push the changes into your repo, there is no other way.
 
-```yml
+To see how your website is going to look like when you deploy it, run `bundle exec jekyll serve` locally and access `http://127.0.0.1:4000/`.
 
----
-layout: post
-title: Markdown and HTML
-tags: [sample, markdown, html]
----
-```
+## Posts
 
-> Tags are case-sensitive `Tag_nAme` ≠ `tag_name`
+Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties) to create posts.
 
-All the tags will be listed the tags page with a link toward the pages or posts.
-The Tag page can be hidden with the `hide` option. You can remove the icon by removing `icon` (like for the search page).
+> **Note:** In the case you're cloning this repo, you can use the available [script](https://github.com/thiagorossener/jekflix-template/wiki/post#creating-a-post) to generate posts automatically.
 
-## Advanced
+## Release notes
 
-### Liquid tags
+### v3.1.1
 
-Jekyll works with [liquid](https://shopify.github.io/liquid/) tags usually represented by:
+- Added `formspree_form_id` config
+- Bumped up dependencies
+- Fixed minor bugs
 
-```
-{{ liquid.tag | filter }}
-```
+### v3.1.0
 
-These are useful to render your jekyll files. 
-You can learn more about them on [shopify's doc](https://help.shopify.com/themes/liquid/basics)
+- Fixed hero URL, thanks to [@JoelSalzesson](https://github.com/JoelSalzesson)
+- Updated Google Analytics script, thanks to [@JHLeeeMe](https://github.com/JHLeeeMe)
+- Added MathJax library to render math expressions, thanks to [@XieGuochao](https://github.com/XieGuochao)
 
-### Gulp toolbox
+### v3.0.2
 
-#### Requirements
+- Added assets folder
 
-Before you need to have *node* and `npm` installed:
+### v3.0.1
 
-- Windows: https://nodejs.org/
-- Ubuntu/Debian: `apt-get install nodejs npm libgl1 libxi6`
-- Fedora (dnf) / RHEL/CentOS (yum): `dnf install node npm libglvnd-glx libXi`
+- Fixed post SVG icons
 
-Then you need to install [`gulp-cli`](https://gulpjs.com/) and its dependencies:
+### v3.0.0
 
-```bash
-cd assets/
-sudo npm install gulp-cli -g
-npm install
-```
+- Created theme `gem`
+- Enabled text translations
+- Added heading anchor links
+- Changed code highlight colors
+- Changed from Stylus to SASS
 
-#### Minimizing and optimizing: css, js and images
+### v2.0.1
+- Fixed bugs
+- Optimized to support disabled JS
 
-You can run the default task that will compress the js, css and images and create the thumbnails for the supported image
-formats:
+### v2.0.0
+- Added optional [sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar)
+- Added optional [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/features#featured-post)
+- Added optional ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/features#before-you-go-modal)
+- Added optional [post pagination](https://github.com/thiagorossener/jekflix-template/wiki/features#paginated-posts)
+- Added [post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/features#post-recommendation)
+- Added meta keywords to improve SEO
+- Added JSON-LD to improve SEO
+- Changed pagination to be [optional](https://github.com/thiagorossener/jekflix-template/wiki/features#home-page-pagination)
+- Improved [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/features#tags-page)
+- Cleaned up and improved [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties)
+- Set up [Netlify CMS](https://github.com/thiagorossener/jekflix-template/wiki/features#netlify-cms-ready)
+- Improved customization settings
+- Minor design updates
 
-```bash
-cd assets/
-gulp default
-gulp thumbnails-all # to create all of the images thumbnails
-gulp thumbnails     # to create thumbnails for the feature-img/ only
-# tip: run a git status to see the changes
-git status
-```
+### v1.0.1
+- Fixed bugs
+- Upgraded to Gulp 4
 
-You can find more about the gulp tasks in the [gulpfile.js](assets/gulpfile.js).
+### v1.0.0
+- Initial release
 
-#### Create a post
+## Questions?
 
-To create a `.md` file in the *_posts/* section with the jekyll format of today's date.
-Use this command with the title you'd like to create the very basic post.
+File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
 
-```bash
-gulp post -n 'title of the post'
-```
+## Author
 
-A file will be created following the format `yyyy-mm-dd-title-of-the-post.md` with default post attributes inside.
-Nothing will happen if the file exists already.
-
-### Use as Ruby Gem 💎
-
-You can use Type-on-strap as a [gem](https://rubygems.org/gems/type-on-strap). 
-
-Using the [Ruby Gem Method](https://sylhare.github.io/2021/03/25/Run-type-on-strap-jekyll-theme-locally.html).
-Add this line to your Jekyll site's Gemfile (or create one):
-
-```ruby
-gem "type-on-strap"
-```
-
-Add this line to your Jekyll site's `_config.yml` file:
-
-```yml
-theme: type-on-strap
-```
-
-Then run Bundler to install the theme gem and dependencies:
-
-```bash
-bundle install
-```
-
-Then you can start adding content like:
-  - Add a `index.html` file
-  - Add the feature page you want. (ex: as it is already in `pages`)
-  - Add posts in `_posts` and `_portfolio` to be displayed
-
-### Remote Theme
-
-Now you can use any theme gem with GitHub pages with [29/11/2017 Github Pages Broadcast](https://github.com/blog/2464-use-any-theme-with-github-pages).
-For that remove all `theme:` attributes from `_config.yml` and add instead:
-
-```yml
-remote_theme: sylhare/Type-on-Strap 
-```
+[Thiago Rossener](https://rossener.com/)
 
 ## License
 
-This theme is licensed under the [The MIT License (MIT)](/LICENSE)
-
-- Pictures from [Pexels](https://www.pexels.com/) are under Creative Commons Zero (CC0) license
-- Fonts are licensed under the [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+*Jekflix Template* is available under the MIT license. See the [LICENSE](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE) file for more info.

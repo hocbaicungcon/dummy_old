@@ -1,57 +1,107 @@
-# SITE CONFIGURATION
-baseurl: ""
-url: "https://hocbaicungcon.github.io"
+# Site Settings
+name: Dummy Fresher
+title: Dummy Fresher | A blog for newbies
+description: Dummy Fresher is a blog for newbies about coding development, designing, youtube...
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
+email: hocbaicungcon@gmail.com
+# See: https://disqus.com/
+# disqus_username: disqus_username
+# Contact Form Setting
+# See: https://formspree.io/
+# formspree_form_id: formspree_form_id
 
-# THEME-SPECIFIC CONFIGURATION
-title: Dummy Fresher
-description: "Dummy Fresher - A website for newbies!"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
 
-# Header and footer text
-header_text: Dummy Fresher - A website for newbies! # Change Blog header text
-header_feature_image: assets/img/header/triangular.jpeg
-header_feature_image_responsive: true
-footer_text: >
-  Powered by Jekyll with Type on Strap
+# Social Media Settings
+# Remove the item if you don't need it
+github_username: hocbaicungcon
+facebook_username: hocbaicungcon
+twitter_username: hocbaicungcon
+# instagram_username: instagram_username
+# linkedin_username: linkedin_username
+# medium_username: medium_username
 
-# Blog
-excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
-post_navigation: true
-color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
-# Features
-# More in the _data folder for share buttons, author and language
-# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: true                                             # Enable if using math markup
-mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
-google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
-cookie_consent: false                                   # To respect the usage of cookies
-color_theme: auto                                       # auto, dark or light
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
 
-# Comments
-comments:
-  disqus_shortname:                                     # Your discus shortname for comments
-  cusdis_app_id:                                        # Your cusdis data-app-id
-  utterances:                                           # Enable by filling below information. For more info, go to https://utteranc.es
-    repo:                                               # your public comments repository (e.g. owner/repo)
-    issue-term:                                         # Issue term (e.g. "comment" consider issues with this word in the title as comments)
 
-# PAGINATION
-paginate: 5
-paginate_path: "/blog/page:num"
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
+language: "vi"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
 
-# PORTFOLIO
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 collections:
-  portfolio:
+  authors:
     output: true
-    permalink: /:collection/:name
+paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
 
-# BUILD SETTINGS
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
+
+# SASS
 sass:
   style: compressed
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
 
-# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
-#remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
+
+# Exclude my node related stuff
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
+
+# Theme
+version: v3.1.1
